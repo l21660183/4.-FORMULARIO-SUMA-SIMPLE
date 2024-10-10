@@ -1,0 +1,93 @@
+<!-- ANGIE XIMENA 0LVERA ALVAREZ-->
+<!--ACTIVIDAD 4 FORMULARIO DE SUMA SIMPLE-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Suma Simple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input[type="number"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .result {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Suma de Números</h1>
+
+        <!-- Campos para ingresar los números -->
+        <input type="number" id="1" placeholder="Número 1"><br>
+        <input type="number" id="2" placeholder="Número 2"><br>
+
+        <!-- Botón para sumar -->
+        <button onclick="sumar()">Sumar</button>
+
+        <!-- Mostrar resultado -->
+        <p id="caquita">Resultado: <span class="result"></span></p>
+    </div>
+
+    <script>
+        function sumar() {
+            var churpia1 = parseFloat(document.getElementById('1').value);
+            var churpia2 = parseFloat(document.getElementById('2').value);
+            var caquita = churpia1 + churpia2;
+            document.querySelector('.result').innerText = caquita;
+        }
+    </script>
+</body>
+</html>
